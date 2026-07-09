@@ -1,0 +1,29 @@
+{
+    "pro": {
+        "BrowserStackTest": {
+            "baseUrl": "https://www.browserstack.com/",
+            "portalName": "browserstack"
+        }
+    },
+    "pre": {},
+    "driverSetup": {
+        "chromeDriverPath": "./src/main/resources/webdrivers/chromedriver.exe",
+        "edgeDriverPath": "./src/main/resources/webdrivers/msedgedriver.exe",
+        "headless": "--headless=new",
+        "arguments": {
+            "windowSize": "--window-size=1920,1080",
+            "certificate": "--ignore-certificate-errors",
+            "audio": "--mute-audio",
+            "remoteOrigins": "--remote-allow-origins=*",
+            "scaleFactor": "force-device-scale-factor=0,5",
+            "debugPort": "--remote-debugging-port=9230",
+            "localhost": "--allow-insecure-localhost",
+            "content": "--allow-running-insecure-content"
+        },
+        "driverType": "chromeHeadless",
+        "environment": "pro",
+        "uploadReport": false,
+        "allScreenshots": true,
+        "cleanOutput": true
+    }
+}
